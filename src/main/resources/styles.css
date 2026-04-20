@@ -1,0 +1,329 @@
+/* ===================================================
+   MyHabits - Global Stylesheet
+   Paleta: Ink Black #03191e | Burgundy #941c2f
+           Blue Bell #20a4f3 | Neon Ice #59f8e8
+           Pale Sky #c1cfda
+   =================================================== */
+
+/* --- Root / Scene background --- */
+.root {
+    -fx-background-color: #03191e;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* --- Labels --- */
+.label {
+    -fx-text-fill: #c1cfda;
+}
+
+.label-title {
+    -fx-text-fill: #59f8e8;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.label-subtitle {
+    -fx-text-fill: #20a4f3;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.label-stat {
+    -fx-text-fill: #59f8e8;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.label-success {
+    -fx-text-fill: #59f8e8;
+    -fx-font-weight: bold;
+}
+
+.label-error {
+    -fx-text-fill: #941c2f;
+    -fx-font-weight: bold;
+}
+
+/* --- Buttons --- */
+.button {
+    -fx-background-color: #20a4f3;
+    -fx-text-fill: #03191e;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 7px 18px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #59f8e8;
+    -fx-text-fill: #03191e;
+}
+
+.button:pressed {
+    -fx-background-color: #c1cfda;
+}
+
+.button-danger {
+    -fx-background-color: #941c2f;
+    -fx-text-fill: #c1cfda;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 7px 18px;
+    -fx-cursor: hand;
+}
+
+.button-danger:hover {
+    -fx-background-color: #c1cfda;
+    -fx-text-fill: #941c2f;
+}
+
+.button-secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c1cfda;
+    -fx-border-color: #c1cfda;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 7px 18px;
+    -fx-cursor: hand;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #c1cfda;
+    -fx-text-fill: #03191e;
+}
+
+/* --- Text Inputs --- */
+.text-field,
+.password-field,
+.text-area {
+    -fx-background-color: #0d2d35;
+    -fx-text-fill: #c1cfda;
+    -fx-border-color: #20a4f3;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-prompt-text-fill: #4a6e7a;
+    -fx-padding: 6px;
+}
+
+.text-field:focused,
+.password-field:focused,
+.text-area:focused {
+    -fx-border-color: #59f8e8;
+}
+
+/* --- ComboBox --- */
+.combo-box {
+    -fx-background-color: #0d2d35;
+    -fx-border-color: #20a4f3;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.combo-box .list-cell,
+.combo-box-popup .list-cell {
+    -fx-background-color: #0d2d35;
+    -fx-text-fill: #c1cfda;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #20a4f3;
+    -fx-text-fill: #03191e;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #20a4f3;
+}
+
+/* --- CheckBox / RadioButton --- */
+.check-box .text,
+.radio-button .text {
+    -fx-text-fill: #c1cfda;
+}
+
+.check-box:selected .box,
+.radio-button:selected .radio {
+    -fx-background-color: #20a4f3;
+    -fx-border-color: #59f8e8;
+}
+
+/* --- Spinner --- */
+.spinner {
+    -fx-background-color: #0d2d35;
+    -fx-border-color: #20a4f3;
+    -fx-border-radius: 5px;
+}
+
+.spinner .text-field {
+    -fx-background-color: #0d2d35;
+    -fx-border-color: transparent;
+    -fx-text-fill: #c1cfda;
+}
+
+/* --- TabPane --- */
+.tab-pane {
+    -fx-background-color: #03191e;
+    -fx-tab-min-width: 120px;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #0a2128;
+    -fx-padding: 5px 5px 0 5px;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #0a2128;
+    -fx-border-radius: 6px 6px 0 0;
+    -fx-background-radius: 6px 6px 0 0;
+    -fx-padding: 8px 15px;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #c1cfda;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #20a4f3;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #03191e;
+}
+
+.tab-pane .tab:hover: !selected {
+    -fx-background-color: #0d2d35;
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: #03191e;
+    -fx-border-color: #20a4f3;
+    -fx-border-width: 1px;
+}
+
+/* --- TableView --- */
+.table-view {
+    -fx-background-color: #0a2128;
+    -fx-border-color: #20a4f3;
+    -fx-border-radius: 6px;
+    -fx-control-inner-background: #0a2128;
+}
+
+.table-view .column-header {
+    -fx-background-color: #20a4f3;
+    -fx-border-color: transparent;
+    -fx-padding: 8px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #03191e;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #0a2128;
+    -fx-border-color: #0d2d35;
+    -fx-padding: 4px;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #0d2d35;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #1a3d47;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #941c2f;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #c1cfda;
+    -fx-alignment: center-left;
+    -fx-padding: 5px 8px;
+}
+
+.table-view .table-row-cell:selected .table-cell {
+    -fx-text-fill: #c1cfda;
+}
+
+/* --- MenuBar --- */
+.menu-bar {
+    -fx-background-color: #0a2128;
+    -fx-border-color: #20a4f3;
+    -fx-border-width: 0 0 1px 0;
+    -fx-padding: 2px;
+}
+
+.menu-bar .menu .label {
+    -fx-text-fill: #c1cfda;
+    -fx-font-weight: bold;
+}
+
+.menu-bar .menu:hover,
+.menu-bar .menu:focused,
+.menu-bar .menu:showing {
+    -fx-background-color: #20a4f3;
+}
+
+.menu-bar .menu:hover .label,
+.menu-bar .menu:showing .label {
+    -fx-text-fill: #03191e;
+}
+
+.context-menu {
+    -fx-background-color: #0a2128;
+    -fx-border-color: #20a4f3;
+}
+
+.menu-item .label {
+    -fx-text-fill: #c1cfda;
+}
+
+.menu-item:hover {
+    -fx-background-color: #20a4f3;
+}
+
+.menu-item:hover .label {
+    -fx-text-fill: #03191e;
+}
+
+/* --- Scroll Bar --- */
+.scroll-bar {
+    -fx-background-color: #0a2128;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #20a4f3;
+    -fx-background-radius: 4px;
+}
+
+/* --- Stat Card (VBox) --- */
+.stat-card {
+    -fx-background-color: #0d2d35;
+    -fx-border-color: #20a4f3;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 18px 25px;
+    -fx-effect: dropshadow(gaussian, rgba(32, 164, 243, 0.25), 10, 0, 0, 2);
+}
+
+/* --- Top Bar --- */
+.top-bar {
+    -fx-background-color: #0a2128;
+    -fx-border-color: #20a4f3;
+    -fx-border-width: 0 0 1px 0;
+    -fx-padding: 10px 20px;
+}
+
+/* --- Login Panel --- */
+.login-card {
+    -fx-background-color: #0d2d35;
+    -fx-border-color: #20a4f3;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 35px 40px;
+    -fx-effect: dropshadow(gaussian, rgba(32, 164, 243, 0.35), 20, 0, 0, 5);
+}
